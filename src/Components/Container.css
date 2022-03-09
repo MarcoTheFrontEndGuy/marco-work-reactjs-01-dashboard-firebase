@@ -1,8 +1,17 @@
 .container {
    width: calc(100% - 100px);
+   margin: 0px 20px;
    height: auto;
    min-height: 100vh;
    background: #ccc;
+   background: #121026;
+
+}
+
+.container__content {
+   width: 100%;
+   margin-top: 20px;
    display: flex;
+   justify-content: space-between;
 
 }

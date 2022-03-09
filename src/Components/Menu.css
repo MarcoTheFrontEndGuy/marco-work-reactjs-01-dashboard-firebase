@@ -2,6 +2,7 @@
 nav {
    height: 100vh;
    background-color: #19162c;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
    position: sticky;
    top: 0;
    display: flex;
@@ -29,6 +30,31 @@ ul {
 ul li {
    text-align: center;
    margin-top: 20px;
+   position: relative;
+   /* display: flex; */
+   /* align-items: center; */
+}
+
+ul li:hover svg {
+   color: #B1147D;
+}
+ul li:hover::before {
+   left: -10px;
+   transition: all .3s;
+}
+ul li::before {
+   content: '';
+   width: 18px;
+   height: 18px;
+   line-height: 24px;
+   border-radius: 50px;
+   position: absolute;
+   top: 5px;
+   left: -30px;
+   color: #B1147D;
+   /* background-color: mediumslateblue; */
+   background-color: #B1147D;
+   ;
 }
 
 ul li:nth-child(6) {
