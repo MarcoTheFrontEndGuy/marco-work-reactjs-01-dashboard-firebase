@@ -1,0 +1,6 @@
+main {
+   background-color: purple;
+   width: 60%;
+   height: 100vh;
+   overflow-y: scroll;
+}

@@ -1,0 +1,8 @@
+.container {
+   width: calc(100% - 100px);
+   height: auto;
+   min-height: 100vh;
+   background: #ccc;
+   display: flex;
+
+}
