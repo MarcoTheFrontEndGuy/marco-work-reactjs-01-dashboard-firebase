@@ -1,6 +1,8 @@
 import React from 'react'
 import './Menu.css'
 import logo from '../img/logo.png'
+import { useEffect } from 'react'
+
 
 import {
    FaDelicious,
@@ -12,8 +14,29 @@ import {
    FaSignOutAlt,
  } from "react-icons/fa";
  
+ 
+ 
+ function Menu() {
 
-function Menu() {
+   useEffect( () => {
+
+      const allMenuIcons = document.querySelectorAll("nav ul li");
+      console.log(allMenuIcons);
+      function menuItems_addActiveClass(ev) {
+
+         allMenuIcons.forEach((eachListItem) => {
+            eachListItem.classList.remove("active");
+            ev.currentTarget.classList.add("active");
+         });
+
+         // alert("this is list element " + ev);
+
+      }
+   
+      allMenuIcons.forEach((all) => all.addEventListener("click", menuItems_addActiveClass));
+
+   }, []);
+
   return (
     <nav>
        <img src={logo} alt="" className="logo" />

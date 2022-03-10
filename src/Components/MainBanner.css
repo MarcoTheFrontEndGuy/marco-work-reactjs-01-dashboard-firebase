@@ -5,6 +5,8 @@
    background-image: url(../img/1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
+   border-radius: 10px;
 
    display: flex;
    flex-direction: column;
@@ -14,6 +16,7 @@
 .mainBanner__content {
    flex-basis: 293px;
    height: auto;
+   margin-right: 20px;
 }
 
 .mainBanner h1 {
@@ -29,11 +32,16 @@
 .mainBanner p { 
    font-size: 18px;
    color: #f1f1f1;
+   text-align: center;
 }
 
-/* .mainBanner__bid {
-
-} */
+.mainBanner__bid {
+   margin-top: 5px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   background-color: darkblue;
+}
 
 .mainBanner__bid__button {
    text-decoration: none;
@@ -52,7 +60,9 @@
 
 
 
-/* .mainBanner__bid__dateline { }
+.mainBanner__bid__dateline { }
 
-.mainBanner__bid__dateline span { }
-)  */
+.mainBanner__bid__dateline span { 
+   display: block;
+   margin: 5px 0 5px 10px;
+}

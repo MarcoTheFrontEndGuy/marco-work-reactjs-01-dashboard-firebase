@@ -8,9 +8,10 @@ function MainBanner() {
        <h1>Round Hall</h1>
        <h2>1.5 ETH</h2>
        <p>Uploaded by Alexander Vernof</p>
-       <div className="mainBanner__bid"></div>
-       <button className="mainBanner__bid__button">BID NOW</button>
-       <p className="mainBanner__bid__dateline">Ending In <span>2d:15h:20m</span></p>
+       <div className="mainBanner__bid">
+        <button className="mainBanner__bid__button">BID NOW</button>
+        <p className="mainBanner__bid__dateline">Ending In <span>2d:15h:20m</span></p>
+       </div>
       </div>
     </div>
   )
