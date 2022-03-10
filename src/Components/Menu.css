@@ -1,5 +1,16 @@
-
+/* nav (is fluid stretches itself with max 100px and minimum of 68px) */
 nav {
+   /* width: 100px; */
+
+
+   /* --------------------- */
+   max-width: 100px;
+   min-width: 68px;
+   width: 7.32vw;
+   
+   /* --------------------- */
+
+
    height: 100vh;
    background-color: #19162c;
    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
@@ -10,39 +21,37 @@ nav {
    align-items: center;
 }
 
-
-.logo {
+nav .logo {
    width: 48px;
    height: 48px;
-   padding-top: 30px;
+   margin-top: 30px;
 }
 
-ul {
+nav ul {
    width: 100px;
    height: auto;
    height: calc(100vh - 108px);
    margin-top: 30px;
    display: flex;
    flex-direction: column;
-   /* justify-content: space-between; */
 }
 
-ul li {
+nav ul li {
    text-align: center;
    margin-top: 20px;
    position: relative;
-   /* display: flex; */
-   /* align-items: center; */
 }
 
-ul li:hover svg {
+nav ul li.active svg {
    color: #B1147D;
 }
-ul li:hover::before {
+
+nav ul li.active::before {
    left: -10px;
    transition: all .3s;
 }
-ul li::before {
+
+nav ul li::before {
    content: '';
    width: 18px;
    height: 18px;
@@ -52,19 +61,24 @@ ul li::before {
    top: 5px;
    left: -30px;
    color: #B1147D;
-   /* background-color: mediumslateblue; */
    background-color: #B1147D;
-   ;
 }
 
-ul li:nth-child(6) {
+nav ul li:nth-child(6) {
    margin-top: auto;
 }
 
-ul li:last-child {
+nav ul li:last-child {
    margin-bottom: 50px;
 }
-.menu__icon {
+
+nav .menu__icon {
    font-size: 24px;
    color: #8c8a95;
+}
+
+@media only screen and (max-width: 525px) {
+   nav {
+      width: 68px;
+   }
 }

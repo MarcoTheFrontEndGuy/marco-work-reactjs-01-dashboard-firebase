@@ -1,5 +1,6 @@
 aside {
-   width: 30%;
+   width: 28%;
    height: 100vh;
-   background-color: rgb(91, 124, 25);
+   background-color: rgb(0, 0, 0);
+   overflow-x: hidden;
 }

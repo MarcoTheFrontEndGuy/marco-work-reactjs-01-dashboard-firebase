@@ -2,11 +2,16 @@
    margin: 0;
    padding: 0;
    border: 0;
-}
+} 
 
 .App {
    width: auto;
+   height: 100vh;
    display: flex;
    background: #121026;
-   
+   overflow-x: hidden;
+}
+
+.App::-webkit-scrollbar {
+   display: none;
 }
