@@ -36,6 +36,7 @@ i {
    background-color: inherit;
    color: #d0cfd4;
    font-size: inherit;
+   border-radius: .5em;
 }
 
 .mainTopBar__formSearch__input:focus {
