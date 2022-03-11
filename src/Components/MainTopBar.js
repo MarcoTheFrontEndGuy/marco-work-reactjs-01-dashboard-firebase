@@ -31,12 +31,13 @@ function MainTopBar() {
 
   return (
     <div className="mainTopBar">
+      
        <form className="mainTopBar__formSearch">
-          <label className="mainTopBar__formSearch__label">
             <i><FaSearch /></i>
             <input className="mainTopBar__formSearch__input" type="text" placeholder="Search items, collections"/>
-          </label>
        </form>
+
+
 
        <div className="userProfileBar">
 
