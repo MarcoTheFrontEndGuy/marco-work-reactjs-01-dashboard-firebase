@@ -1,46 +1,60 @@
 .mainBanner {
-   width: 100%;
-   height: 242px;
-   background: burlywood;
-   background-image: url(../img/1.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
+   height: 260px;
+   background-color: #03073c;
+   border-radius: 0.5em;
    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
-   border-radius: 10px;
-
    display: flex;
    flex-direction: column;
    align-items: flex-end;
+   position: relative;
 }
 
 .mainBanner__content {
-   flex-basis: 293px;
-   height: auto;
-   margin-right: 20px;
+   /* mine  */
+   /* flex-basis: 293px; */
+   /* height: auto;
+   margin-right: 20px; */
+   /* END - mine  */
+   position: absolute;
+   /* bottom: 20px; */
+   right: 20px;
 }
 
 .mainBanner h1 {
    font-size: 56px;
    color: #f1f1f1;
    margin: 5px 0;
+   /* ----------------------------------------- */
+   font-size: 3.5rem;
+   font-weight: 700;   /*this is wrong "h1" is bold by default"
+   /* ----------------------------------------- */
 }
+
 .mainBanner h2 {
    font-size: 40px;
    color: #b1147d;
    margin: 5px 0;
- }
+   /* ----------------------------------------- */
+   font-size: 2.5rem;
+   /* ----------------------------------------- */
+}
+
 .mainBanner p { 
    font-size: 18px;
    color: #f1f1f1;
-   text-align: center;
+   /* text-align: center; */
+   /* ----------------------------------------- */
+   text-align: left; /* there is no text-align */
+   margin: 5px 0;
+   /* ----------------------------------------- */
+
 }
 
 .mainBanner__bid {
-   margin-top: 5px;
+   margin: 5px 0;
    display: flex;
-   justify-content: flex-start;
+   /* justify-content: flex-start; */
    align-items: center;
-   background-color: darkblue;
 }
 
 .mainBanner__bid__button {
@@ -48,7 +62,7 @@
    font-size: 14px;
    color: #fff;
    background: linear-gradient(#ff21bc, #b21783);
-   padding: 5px 15px;
+   padding: 8px 15px;
    border-radius: 10px;
    text-transform: uppercase;
    font-weight: 600;
@@ -58,11 +72,12 @@
    cursor: pointer;
 }
 
-
-
-.mainBanner__bid__dateline { }
+.mainBanner__bid__dateline {
+   margin-left: 10px;
+ }
 
 .mainBanner__bid__dateline span { 
    display: block;
-   margin: 5px 0 5px 10px;
+   margin: 5px 0;
+   color: #b1147d;
 }

@@ -10,8 +10,19 @@
 
 .container__content {
    width: 100%;
-   margin-top: 15px;
+   /* margin-top: 15px; */
    display: flex;
    justify-content: space-between;
+   /* the container below the topbar(logo and profile) */
+   height: calc(100% - 45px);
+   padding-top: 15px;
 
+   
+   /* the container below the topbar(logo and profile) */
+}
+
+@media screen and (max-width: 525px) {
+   .container {
+      width: calc(100% - 60px);
+   }
 }
