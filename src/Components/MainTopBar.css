@@ -17,6 +17,13 @@
    font-size: 16px;
 }
 
+/* @media screen and (max-width: 525px) {
+   .mainTopBar__formSearch {
+      flex-basis: 120px;
+      background-color: pink;
+      z-index: 101;
+   }
+} */
 i {
    position: absolute;
    width: 40px;
@@ -31,39 +38,74 @@ i {
 .mainTopBar__formSearch__input {
    height: 100%;
    line-height: 30px;
-   padding-left: 40px;
    width: 350px;
+   width: auto;
+   width: 100%;
    background-color: inherit;
    color: #d0cfd4;
    font-size: inherit;
    border-radius: .5em;
+   padding: 0px 40px;
 }
 
 .mainTopBar__formSearch__input:focus {
    outline: 0px solid orange;
+   transition: all .3s;
 } 
 
 .mainTopBar__formSearch__input::placeholder{
    color: #757380;
 }
 
+@media screen and (max-width: 525px) {
+   .mainTopBar__formSearch {
+      flex-basis: 120px;
+      z-index: 101;
+   }
+   
+   .mainTopBar__formSearch__input:focus {
+      width: 320px;
+      transition: all .3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+
+   } 
+
+}
+
 
 /* --------------------- */
 /* topbar user profile (bell, profile image, user name, arrow to open small popup box) */
-.userProfileBar {
-   width: 240px;
-   display: flex;
-   align-items: center;
+
+
+ .userProfileBar {  /*this is tutorial styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d0cfd4;
+    position: relative;
  }
 
-.userProfileBar__notificationBell--wrapper {
+
+.userProfileBar__notificationBell--wrapper { /*this is tutorial styling */
    width: 40px;
    height: 40px;
-   border-radius: 10px;
    background-color: #19162c;   
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   border-radius: 0.5em;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+   text-align: center;
+   line-height: 40px;
+   font-size: 18px;
+   position: relative;
+}
+.userProfileBar__notificationBell--wrapper::before { /*this is tutorial styling */
+   content: '';
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   width: 8px;
+   height: 8px;
+   background-color: #b1147d;
+   border-radius: 50%;
+
 }
 
 .userProfileBar__notificationBell { 
@@ -72,11 +114,12 @@ i {
    color: #d0cfd4;
 }
 
-.userProfileBar__userImage-Container { 
+.userProfileBar__userImage-container { 
    width: 40px;
    height: 40px;
+   background: red;
+   margin: 0px 10px;
    border-radius: 50%;
-   margin-left: 10px;
 } 
 
  .userProfileBar__userImage {
@@ -84,58 +127,70 @@ i {
    width: 40px;
    height: 40px;
    border-radius: 50%;
+   overflow: hidden;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
-
 
 .userProfileBar__userName { 
    font-size: 14px;
    color: #d0cfd4;
    margin-left: 10px;
    font-family: Roboto, sans-serif;
+   font-weight: 500;
 }
 
 /* ------------- USER PROFILE ICON/TOGGLE & POPUP MENU ------------------------------- */
-
-.userProfileBar__menu-container {
-   padding: 10px;
-   position: relative;        /*set the reference for the popup menu position */
-}
-
 /* user profile icon toggle - open/close popup menu  */
 .FaAngleDown-icon {
-   width: 12px;
-   height: 12px;
    color: #d0cfd4;
-   margin-left: 10px;
-   display: block;
+   margin: 0 10px;
    transition: transform .4s;
+   cursor: pointer;
+   font-size: 16px;
 } 
 
 /* this is the popup menu (user profile ) */
-.userProfileBar__menu {
+/* menu-ul   is the ul popup box  */
+
+.userProfileBar__menu-ul {
+   position: absolute;
+   top: 50px;
+   right: 10px;
+   background-color: #19162c;
    width: 180px;
    height: 189px;
    font-size: 16px;
-   color: #d0cfd4;
-   background-color: #19162c;
    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
-   border-radius: 20px;
-   z-index: 100;
    list-style: none;
-   position: absolute;
-   top: 40px;
-   right: -250px;
-   transition: all .3s;
+   transform: translateX(300px);
+   z-index: 1;
+   transition: all .3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+   border-radius: .5em;
 }
 
- .userProfileBar__menu li {
+.userProfileBar__menu-ul::after {
+   content: '';
+   background-color: #19162c;
+   position: absolute;
+   top: -5px;
+   right: 6px;
+   width: 14px;
+   height: 14px;
+   transform: rotate(45deg);
+}
+
+ .userProfileBar__menu-ul li {
    font-size: 16px;
    color: #757380;
    padding: 10px 10px; 
    margin: 5px 0;
  }
 
- .userProfileBar__menu li:hover {
+ .userProfileBar__menu-ul li:hover {
    color: #f1f1f1;
    background-color: #121026;
  }
+
+
+
+
