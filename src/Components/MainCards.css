@@ -1,0 +1,15 @@
+.MainCards_Container {
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #19162c;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;   
+  border-radius: 10px;
+}
+
+.cardsContainer{ 
+  width: auto; 
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  margin-top: 15px;
+ }

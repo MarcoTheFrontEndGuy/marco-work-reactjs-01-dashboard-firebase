@@ -17,14 +17,7 @@
    font-size: 16px;
 }
 
-/* @media screen and (max-width: 525px) {
-   .mainTopBar__formSearch {
-      flex-basis: 120px;
-      background-color: pink;
-      z-index: 101;
-   }
-} */
-i {
+.mainTopBar__formSearch i {
    position: absolute;
    width: 40px;
    height: 45px;
@@ -66,15 +59,11 @@ i {
    .mainTopBar__formSearch__input:focus {
       width: 320px;
       transition: all .3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
-
    } 
-
 }
-
 
 /* --------------------- */
 /* topbar user profile (bell, profile image, user name, arrow to open small popup box) */
-
 
  .userProfileBar {  /*this is tutorial styling */
     display: flex;
@@ -82,8 +71,8 @@ i {
     align-items: center;
     color: #d0cfd4;
     position: relative;
+    margin-left: 20px;   /* (responsive distance with search bar) */
  }
-
 
 .userProfileBar__notificationBell--wrapper { /*this is tutorial styling */
    width: 40px;
@@ -96,6 +85,7 @@ i {
    font-size: 18px;
    position: relative;
 }
+
 .userProfileBar__notificationBell--wrapper::before { /*this is tutorial styling */
    content: '';
    position: absolute;
