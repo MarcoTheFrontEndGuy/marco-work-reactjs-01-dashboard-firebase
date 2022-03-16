@@ -1,17 +1,6 @@
-/* aside {
-   width: 28%;
-   height: 100vh;
-   overflow: hidden;
-   padding: 20px 0;
-   
-} */
-
-
-/* #################################### */
 aside {
    width: 28%;
    height: 123vh;
-   /* overflow-x: hidden; */
    overflow: hidden;
    overflow-y: scroll;
    padding: 20px 0;
@@ -43,26 +32,24 @@ aside::-webkit-scrollbar-button {
    margin-bottom: 15px;
    padding: 10px 20px;
    margin-right: 20px;
-
 }
-
 
 /* .statistics {
    display: flex;
    justify-content: space-between;
 } */
 
-.statistics__header {
+.asideContainer__header {
    display: flex;
    justify-content: space-between;
 }
 
-.statistics__header__h3 {
+.asideContainer__header__h3 {
    font-size: 24px;
    color: #d1d0d5;
 }
 
-.statistics__header__a {
+.asideContainer__header__a { 
    font-size: 16px;
    color: #b1147d;
 }
@@ -73,7 +60,6 @@ aside::-webkit-scrollbar-button {
 }
 
 .statistics__ul__li {
-   /* margin: 8px; */
    margin: 10px 0;
    padding: 10px;
    font-size: 12px;
@@ -97,5 +83,5 @@ aside::-webkit-scrollbar-button {
    /* height: 40vh; */
    /* margin: 5vh 0px; */
    /* overflow-y: scroll; */
-
+   min-height: 400px;
 }
