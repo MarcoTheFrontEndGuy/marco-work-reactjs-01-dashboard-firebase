@@ -1,6 +1,101 @@
-aside {
+/* aside {
    width: 28%;
    height: 100vh;
-   background-color: rgb(0, 0, 0);
-   overflow-x: hidden;
+   overflow: hidden;
+   padding: 20px 0;
+   
+} */
+
+
+/* #################################### */
+aside {
+   width: 28%;
+   height: 123vh;
+   /* overflow-x: hidden; */
+   overflow: hidden;
+   overflow-y: scroll;
+   padding: 20px 0;
+}
+
+aside::-webkit-scrollbar {
+   background-color: rgb(7, 41, 151);
+   background-color: #3e3a5a;
+   width: 15px;
+   border-radius: 10px;
+}
+
+/* aside::-webkit-scrollbar-track { } */
+aside::-webkit-scrollbar-thumb {
+   background-color: rgb(173, 9, 105);
+   border: 2px solid rgb(18, 14, 235);
+   border: 2px solid #3e3a5a;
+   border-radius: 20px;
+}
+aside::-webkit-scrollbar-button {
+   margin-bottom: 50px;
+}
+/* #################################### */
+.asideContainer {
+   width: auto;
+   min-height: 285px;
+   background-color: #19162c;
+   border-radius: 20px;
+   margin-bottom: 15px;
+   padding: 10px 20px;
+   margin-right: 20px;
+
+}
+
+
+/* .statistics {
+   display: flex;
+   justify-content: space-between;
+} */
+
+.statistics__header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.statistics__header__h3 {
+   font-size: 24px;
+   color: #d1d0d5;
+}
+
+.statistics__header__a {
+   font-size: 16px;
+   color: #b1147d;
+}
+
+.statistics__ul {
+   padding: 5px 10px;
+   padding-top: 3px;
+}
+
+.statistics__ul__li {
+   /* margin: 8px; */
+   margin: 10px 0;
+   padding: 10px;
+   font-size: 12px;
+   color: #adabb8;
+   border-radius:   5px;
+   display: flex;
+   justify-content: space-between;
+   font-weight: bold;
+}
+
+.statistics__ul__li:nth-child(odd) {
+   background-color: #211d3a;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
+   border-radius: 5px;
+}
+
+
+/* ----------------------------------- */
+.topSellers {
+   width: auto;
+   /* height: 40vh; */
+   /* margin: 5vh 0px; */
+   /* overflow-y: scroll; */
+
 }

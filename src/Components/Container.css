@@ -3,6 +3,7 @@
    margin: 0px 20px;
    height: auto;
    min-height: 100vh;
+   overflow: hidden;
    background: #ccc;
    background: #121026;
 
