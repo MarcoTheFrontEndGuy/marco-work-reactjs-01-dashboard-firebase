@@ -81,3 +81,39 @@
    margin: 5px 0;
    color: #b1147d;
 }
+
+@media screen and (max-width: 973px) {
+   .mainBanner h1 {
+      font-size: 5.75vw;
+   }
+   .mainBanner h2 {
+      font-size: 4.11vw;
+   }
+}
+/* @media screen and (max-width: 962px) {
+   ul.menu_UL_filters {
+      flex-wrap: wrap;
+   }
+   ul.menu_UL_filters__li {
+      width: 45%;
+      background-color: aqua;
+   }
+} */
+
+
+
+@media screen and (max-width: 663px) {
+   .container {
+      overflow: initial;
+   }
+   .container__content {
+      flex-direction: column;
+      height: auto;
+   }
+   main {
+      width: 100%;
+   }
+   aside {
+      width: 100%;
+   }
+}

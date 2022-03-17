@@ -49,3 +49,32 @@ ul.menu_UL_filters {
    border-radius: 10px;
    margin: 0px 5px;
 }
+
+@media screen and (max-width: 962px) {
+   ul.menu_UL_filters {
+      flex-wrap: wrap;
+      min-height: 45px;
+      height: auto;
+
+   }
+   .menu_UL_filters__li {
+      width: 30%;
+      margin-bottom: 5px;
+      flex: 1 1 97px;
+   }
+   .menu_UL_filters__li:nth-child(3) {
+      margin-left: initial;
+      padding: 5px 15px;
+
+      /* ============================== */
+      margin-right: 0px;
+      padding: 5px 0px;
+      margin-left: 5px;
+      /* ============================== */
+   }
+   
+   .menu_UL_filters__li a {
+      display: block;
+   }
+}
+

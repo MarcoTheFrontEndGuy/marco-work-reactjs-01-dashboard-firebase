@@ -38,59 +38,108 @@ function Aside() {
          </ul>
        </section>
 
-       <section className="asideContainer topSeller">
+       <section className="asideContainer topSellers">
          <header className="asideContainer__header">
            <h3 className="asideContainer__header__h3">Top Sellers</h3>
-           <a  className="asideContainer__header__a"href="#">View More</a>
+           <a  className="asideContainer__header__a "href="#">View More</a>
          </header>
-         <ul className="topSeller__ul">
-            <li className="topSeller__ul__li">
+         <ul className="topSellers__ul">
+            <li className="topSellers__ul__li">
               <img src={seller1} alt="" />
               <p>
-                ArtWork Sold
-                <span>187</span>
+                Jane Cooper
+                <span>@jane</span>
               </p>
-              <a href="#">Follow</a>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
             </li>
 
-            <li className="topSeller__ul__li">
+            <li className="topSellers__ul__li">
               <img src={seller2} alt="" />
               <p>
-                ArtWork Cancelled
-                <span>5</span>
+                Ariene McCoy
+                <span>@ariene</span>
               </p>
-              <a href="#">Follow</a>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
             </li>
-            <li className="topSeller__ul__li">
+            <li className="topSellers__ul__li">
               <img src={seller3} alt="" />
               <p>
-                ArtWork Pending
-                <span>25</span>
+                Thersi Webb
+                <span>@thersi</span>
               </p>
-              <a href="#">Follow</a>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
             </li>
-            <li className="topSeller__ul__li">
+            <li className="topSellers__ul__li">
               <img src={seller4} alt="" />
               <p>
-                ArtWork Delivered
-                <span>200</span>
+                Kirsty Edwards
+                <span>@kirsty</span>
               </p>
-              <a href="#">Follow</a>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
             </li>
-            <li className="topSeller__ul__li">
+            <li className="topSellers__ul__li">
               <img src={seller5} alt="" />
               <p>
-                Total Earnings
-                <span>262 ETH</span>
+                Ralph Wiggum
+                <span>@ralph</span>
               </p> 
-              <a href="#">Follow</a>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
             </li>
         
          </ul>
        </section>
-       <div className={`asideContainer topSellers`}>
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error est ullam sunt tenetur accusamus esse ipsa. Blanditiis ex aperiam neque mollitia. Nesciunt rem consequuntur excepturi quidem ipsum? Iusto ad saepe itaque perferendis? Commodi, reprehenderit voluptatem illum optio vero harum voluptates.
-       </div>
+
+       <section className="asideContainer topSellers">
+         <header className="asideContainer__header">
+           <h3 className="asideContainer__header__h3">New Sellers</h3>
+           <a  className="asideContainer__header__a "href="#">View More</a>
+         </header>
+         <ul className="topSellers__ul">
+            <li className="topSellers__ul__li">
+              <img src={seller1} alt="" />
+              <p>
+                Jane Cooper
+                <span>@jane</span>
+              </p>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
+            </li>
+
+            <li className="topSellers__ul__li">
+              <img src={seller2} alt="" />
+              <p>
+                Ariene McCoy
+                <span>@ariene</span>
+              </p>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
+            </li>
+            <li className="topSellers__ul__li">
+              <img src={seller3} alt="" />
+              <p>
+                Thersi Webb
+                <span>@thersi</span>
+              </p>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
+            </li>
+            <li className="topSellers__ul__li">
+              <img src={seller4} alt="" />
+              <p>
+                Kirsty Edwards
+                <span>@kirsty</span>
+              </p>
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
+            </li>
+            <li className="topSellers__ul__li">
+              <img src={seller5} alt="" />
+              <p>
+                Ralph Wiggum
+                <span>@ralph</span>
+              </p> 
+              <a className="topSellers__ul__li__a-button" href="#">Follow</a>
+            </li>
+        
+         </ul>
+       </section>
+       
     </aside>
   )
 }
