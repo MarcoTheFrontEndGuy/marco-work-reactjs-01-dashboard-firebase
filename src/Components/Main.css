@@ -10,3 +10,9 @@ main {
 main::-webkit-scrollbar {
    display: none;
 }
+
+@media screen and (max-width: 400px) {
+   main {
+      width: 85%;
+   }
+}

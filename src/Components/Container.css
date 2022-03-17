@@ -24,6 +24,18 @@
 
 @media screen and (max-width: 525px) {
    .container {
-      width: calc(100% - 60px);
+      width: calc(100% - 68px);
    }
+}
+
+@media screen and (max-width: 400px) {
+   .container {
+      width: calc(100% - 68px);
+      height: auto;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #121026;
+      padding: 0 5px;
+      margin: 0px;
+  }
 }

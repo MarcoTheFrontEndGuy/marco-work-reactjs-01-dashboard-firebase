@@ -145,8 +145,34 @@ aside::-webkit-scrollbar-button {
       width: 28%;
       min-width: 260px;
       height: auto;
-      /* overflow: hidden; */
-      /* overflow-y: scroll; */
       padding: 20px 0;
+      padding: 0px;
+   }
+
+   aside::-webkit-scrollbar {
+      background-color: rgb(7, 41, 151);
+      background-color: #3e3a5a;
+      width: 15px;
+      border-radius: 10px;
+      display: none;
+  }
+
+  .asideContainer {
+      width: auto;
+      min-height: 285px;
+      background-color: #19162c;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      /* margin-right: 20px; */
+      margin-top: 20px;
+      margin-right: 0px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+
+   .topSellers__ul__li {
+      font-weight: 300;
    }
 }

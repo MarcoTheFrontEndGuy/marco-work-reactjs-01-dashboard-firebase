@@ -1,15 +1,8 @@
 /* nav (is fluid stretches itself with max 100px and minimum of 68px) */
 nav {
-   /* width: 100px; */
-
-
-   /* --------------------- */
    max-width: 100px;
    min-width: 68px;
    width: 7.32vw;
-   
-   /* --------------------- */
-
 
    height: 100vh;
    background-color: #19162c;
@@ -82,4 +75,11 @@ nav .menu__icon {
    nav {
       width: 68px;
    }
+}
+
+@media screen and (max-width: 400px) {
+   nav ul {
+      width: 68px;
+   }
+
 }

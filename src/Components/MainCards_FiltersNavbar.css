@@ -19,6 +19,9 @@ ul.menu_UL_filters {
    margin-right: 15px;
    font-size: 20px;
    font-weight: 700;
+   /* background-color: red; */
+   margin-left: 5px;
+   display: inline-block;
 }
 .menu_UL_filters__li:nth-child(3) { 
    margin-left: auto;
@@ -76,5 +79,20 @@ ul.menu_UL_filters {
    .menu_UL_filters__li a {
       display: block;
    }
+}
+
+
+@media screen and (max-width: 600px) {
+   ul.menu_UL_filters {
+      width: auto;
+      min-height: 43px;
+      height: auto;
+      /* background-color: #333; */
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      align-items: center;
+      padding: 2px 6px;
+  }
 }
 
